@@ -1,4 +1,5 @@
 ## Bowser for Meteor
+
 A Browser detector. Because sometimes, there is no other way, and not even good modern browsers always provide good feature detection mechanisms.
 
 [![bowser ci](https://secure.travis-ci.org/ded/bowser.png)](https://travis-ci.org/ded/bowser/)
@@ -16,10 +17,11 @@ if (bowser.msie && bowser.version <= 6) {
   * `chrome`[`webkit`]
   * `firefox`[`gecko`]
   * `msie`
+  * `msedge`
   * Android native browser as `android`[`webkit`]
   * iOS native browser as `ios`[`webkit`]
   * `opera`[`webkit` if >12]
-  * `phantomjs`[`webkit`]
+  * `phantom`[`webkit`]
   * `safari`[`webkit`]
   * `seamonkey`[`gecko`]
   * BlackBerry native browser as `blackberry`[`webkit`]
@@ -73,7 +75,6 @@ if (require('bowser').chrome) {
 ```
 
 ### Graded Browser Support
-One useful feature of Bowser is that aside from checking one browser from another -- it will keep up to date with [Yahoo's Graded Browser Support](http://developer.yahoo.com/yui/articles/gbs/) chart, giving you access to each grade on the bowser object
 
 ``` js
 if (bowser.a) {
@@ -102,3 +103,6 @@ See the list in `src/useragents.js` with example user agents and their expected 
 
 Whenever you add support for new browsers or notice a bug / mismatch, please update the list and
 check if all tests are still passing.
+
+### License
+Licensed as MIT. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.
