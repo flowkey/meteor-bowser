@@ -284,4 +284,4 @@ bowser = (function () {
   bowser._detect = detect;
 
   return bowser
-});
+})();
