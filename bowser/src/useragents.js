@@ -86,6 +86,7 @@ module.exports.useragents = {
       }
     , 'Mozilla/5.0 (X11; CrOS i686 4319.74.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.57 Safari/537.36': {
         chrome: true
+      , chromeBook: true
       , version: '29.0'
       , webkit: true
       , a: true
@@ -252,6 +253,23 @@ module.exports.useragents = {
       , c: true
       }
     }
+  , 'Yandex Browser': {
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 YaBrowser/15.4.2272.3420 (beta) Yowser/2.0 Safari/537.36': {
+            yandexbrowser: true
+            , webkit: true
+            , version: '15.4'
+            , a: true
+        },
+        'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 5 Build/LMY48B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 YaBrowser/15.4.2272.3608.00 Mobile Safari/537.36': {
+            yandexbrowser: true
+            , android: true
+            , osversion: '5.1.1'
+            , mobile: true
+            , version: '15.4'
+            , webkit: true
+            , a: true
+        }
+    }
   , Safari: {
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.13+ (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2': {
         safari: true
@@ -356,6 +374,13 @@ module.exports.useragents = {
         msie: true
       , version: '5.01'
       , c: true
+      }
+    }
+  , 'Microsoft Edge': {
+      'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36 Edge/12.0': {
+        msedge: true
+      , version: '12.0'
+      , a: true
       }
     }
   , Firefox: {
@@ -735,6 +760,14 @@ module.exports.useragents = {
       , mobile: true
       , c: true
       }
+    , 'Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; DEVICE INFO) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Mobile Safari/537.36 Edge/12.0': {
+        windowsphone: true
+      , osversion: '10.0'
+      , msedge: true
+      , version: '12.0'
+      , mobile: true
+      , a: true
+      }
     }
   , WebOS: {
       'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0': {
@@ -931,4 +964,11 @@ module.exports.useragents = {
       , x: true
       }
     }
+  , Generic: {
+    'Generic/2.15 libww': {
+      name: 'Generic'
+    , version: '2.15'
+    , x: true
+    }
+  }
 };
