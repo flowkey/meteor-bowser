@@ -4,11 +4,7 @@
   * MIT License | (c) Dustin Diaz 2015
   */
 
-!function (name, definition) {
-  if (typeof module != 'undefined' && module.exports) module.exports = definition()
-  else if (typeof define == 'function' && define.amd) define(definition)
-  else this[name] = definition()
-}('bowser', function () {
+bowser = (function () {
   /**
     * See useragents.js for examples of navigator.userAgent
     */
